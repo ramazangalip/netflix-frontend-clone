@@ -1,15 +1,9 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Netflix world – Watch TV Shows Online, Watch Movies Online</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,33 +15,37 @@
     <link rel="stylesheet" href="../assets/css/browse.css">
     <link rel="stylesheet" href="../assets/css/single.css">
 
-    <!--html 5 video player-->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
 
 </head>
+<style>
+      body{
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    }
+    .logo, .second-logo {
+    height: 28px; 
+    margin-right: 25px; 
+}
+
+.second-logo {
+    height: 28px; 
+}
+</style>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
-    <!-- dashboard/browse page block start | home page after login | -->
-
     <main id="mainContainer" class="p-b-40">
 
         <header class="d-flex space-between flex-center flex-middle">
             <div class="nav-links d-flex flex-center flex-middle">
                 <a href="/">
-                    <h2 class="logo logo-text red-color f-s-28 m-r-25">NETFLIX</h2>
-                    <h2 class="second-logo-text red-color f-s-28">N</h2>
+                    <img src="../image.png" alt="Netflix Logo" class="logo m-r-25">
                 </a>
-                <a href="browse.html" class="nav-item home">Home</a>
-                <a href="tvshow.html" class="nav-item">TV Show</a>
-                <a href="movies.html" class="nav-item">Movies</a>
-                <a href="latest.html" class="nav-item latest">Latest</a>
-                <a href="mylist.html" class="nav-item">My List</a>
+                <a href="browse.html" class="nav-item home">Anasayfa</a>
+                <a href="tvshow.html" class="nav-item">Diziler</a>
+                <a href="movies.html" class="nav-item">Filmler</a>
+                <a href="latest.html" class="nav-item latest">Son İzlenenler</a>
+                <a href="mylist.html" class="nav-item">Listem</a>
             </div>
             <div class="righticons d-flex flex-end flex-middle">
                 <a href="search.html"><img src="../images/icons/search.svg" alt="search icon"></a>
@@ -56,20 +54,17 @@
                         <div class="dropdown-content">
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="../../images/icons/user2.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
+                                <span>Yeni Bildirim<span>1</span></span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="../../images/icons/user1.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
+                                <span>Yeni Bildirim<span>2</span></span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="../../images/icons/user4.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
+                                <span>Yeni Bildirim<span>3</span></span>
                             </a>
-                            <a href="#" class="profile-item d-flex flex-middle">
-                                <img src="../../images/icons/user3.png" alt="user profile icon" class="user-icon">
-                                <span>You have new notification from <span>User 123</span></span>
-                            </a>
+                           
                         </div>
                     </div>
                 <div class="dropdown">
@@ -79,27 +74,26 @@
                         <div class="profile-links">
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="../images/icons/user1.png" alt="user profile icon" class="user-icon">
-                                <span>Rajesh</span>
+                                <span>Ali</span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="../images/icons/user2.png" alt="user profile icon" class="user-icon">
-                                <span>Karan</span>
+                                <span>Kenan</span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle">
                                 <img src="../images/icons/user3.png" alt="user profile icon" class="user-icon">
-                                <span>Pappy</span>
+                                <span>Ayşe</span>
                             </a>
                             <a href="#" class="profile-item d-flex flex-middle" style="margin-bottom: 13px;">
                                 <img src="../images/icons/user4.png" alt="user profile icon" class="user-icon">
-                                <span>Denny</span>
+                                <span>Fatma</span>
                             </a>
-                            <a href="#" class="profile-item last" >Manage Profiles</a>
+                            <a href="../profilYönetimi.html" class="profile-item last" >Profilleri Yönet</a>
                         </div>
                         <div class="line"></div>
                         <div class="links d-flex direction-column">
-                            <a href="user-profile/home.html">Account</a>
-                            <a href="#">Help Center</a>
-                            <a href="/">Sign Out of Netflix</a>
+                            <a href="user-profile/home.html">Hesabım</a>
+                            <a href="../index.html">Sign Out of Netflix</a>
                         </div>
                         
                     </div>
@@ -108,15 +102,15 @@
             </div>
         </header>
 
-        <!-- hero section video-->
+        
         <div class="videocontainer">
             <video controls crossorigin playsinline
                 poster="../images/movies/murder mystery.jpg" id="player">
-                <!-- Video files -->
+                
                 <source src="../images/movies/videos/Murder Mystery - Trailer - Netflix.mp4" type="video/mp4"
                     >
 
-                <!-- Caption files -->
+                
                 <track kind="captions" label="English" srclang="en"
                     src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
             </video>
@@ -124,13 +118,13 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+                
                 const player = new Plyr('#player');
 
-                // Expose
+                
                 window.player = player;
 
-                // Bind event listener
+                
                 function on(selector, type, callback) {
                     document.querySelector(selector).addEventListener(type, callback, false);
                 }
@@ -158,28 +152,28 @@
                 chance encounter leads to them being framed for the murder of an elderly billionaire.
             </div>
             <div class="castinformation">
-                <p><span class="name">Director:</span> Kyle Newacheck</p>
-                <p><span class="name">Screenplay:</span> James Vanderbilt</p>
-                <p><span class="name">Producers:</span> Adam Sandler, James Vanderbilt, Allen Covert, James D. Stern,
+                <p><span class="name">Yönetmen:</span> Kyle Newacheck</p>
+                <p><span class="name">Kameraman:</span> James Vanderbilt</p>
+                <p><span class="name">Başroller:</span> Adam Sandler, James Vanderbilt, Allen Covert, James D. Stern,
                     Tripp Vinson, A.J. Dix</p>
-                <p><span class="name">Awards:</span> People's Choice Award for Favorite Comedic Movie</p>
+                <p><span class="name">Ödüller:</span> People's Choice Award for Favorite Comedic Movie</p>
             </div>
             <div class="actions d-flex flex-start flex-middle">
                 <a href="#" class="link-item">
                     <i class="fa fa-plus"></i></br>
-                    My List
+                    Listeme Ekle
                 </a>
                 <a href="#" class="link-item">
                     <i class="fa fa-thumbs-up"></i></br>
-                    Like
+                    Beğen
                 </a>
                 <a href="#" class="link-item">
                     <i class="fa fa-share"></i></br>
-                    Share
+                    Paylaş
                 </a>
                 <a href="#" class="link-item">
                     <i class="fa fa-download"></i></br>
-                    Download
+                    İndir
                 </a>
             </div>
         </section>
@@ -187,10 +181,10 @@
 
 
 
-        <!--Hollywood Action movies-->
+       
         <section id="similar" class="container p-t-40">
             <h4 class="romantic-heading">
-                More LIke This
+                Daha Fazla Benzer İçerik
             </h4>
             <div class="romantic-container d-flex flex-start flex-middle">
                 <a href="#">

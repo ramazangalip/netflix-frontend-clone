@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/landing-pages.css">
 </head>
-
+<style>
+      body{
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    }
+</style>
 <body>
     <main style="padding: 0px 10px;">
         <header class="d-flex space-between middle-align">
@@ -16,28 +20,28 @@
         </header>
         <section id="landing-hero-section" class=" d-flex direction-column flex-center middle-align">
 
-            <h1>Unlimited movies, TV shows, and more.</h1>
-            <h2>Watch anywhere. Cancel anytime.</h2>
+            <h1>Sınırsız Film ve Eğlencenin</h1>
+            <h2>Keyfini Çıkarın</h2>
 
            
-            <form class="email-form d-flex" id="email-form" method="POST" action="/register.html">
+            <form class="email-form d-flex" id="email-form" method="POST" action="/login.html">
 
-                <h3 class="email-form-title">Ready to watch? Enter your email to create or access your account.</h3>
+                <h3 class="email-form-title">Aramıza katılmaya hazır mısın? E-mail adresinizi girin</h3>
                 <p id="email-error" style="color: #e50914; font-weight: 600; display: none;">Enter correct email</p>
 
                 <div class="email-form-lockup d-flex">
 
                     <div>
                         <input type="email" name="email" class="emailField" id="id_email" value="" tabindex="0"
-                            autocomplete="email" maxlength="50" minlength="5" placeholder="Email address"
+                            autocomplete="email" maxlength="50" minlength="5" placeholder="E-mail adresinizi girin"
                             onchange="validateEmail()" />
                         
                     </div>
                     <button class="button submit" type="submit" id="submitbutton" tabindex="0" disabled="disabled">
-                        <span class="hero-cta-btn-txt">TRY FOR
-                            ₹&nbsp;199
+                        <a href="/register.html">
+                        <span class="hero-cta-btn-txt">Kayıt ol
+                            ₺&nbsp;199
                         </span>
-                        <!-- right arrow icon-->
                         <span>
                             <svg version="1.1" id="right-icon" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
@@ -51,6 +55,7 @@
                                 </g>
                             </svg>
                         </span>
+                    </a>
                     </button>
 
 
